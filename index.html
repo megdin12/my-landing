@@ -11,6 +11,8 @@
         text-decoration: none;
         font-weight: bold;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        margin-top: 20px;
       }
       .btn:hover {
         background-color: #3e8e41;
@@ -28,6 +30,37 @@
         padding: 25px;
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        flex-wrap: wrap;
+      }
+      .about {
+        padding: 25px;
+        background: #f4f4f4;
+      }
+      footer {
+        display: flex;
+        background: #010306;
+        color: white;
+        padding: 25px;
+        justify-content: center;
+        text-align: center;
+        font-cize: 14px;
+      }
+      section {
+        padding: 60px 30px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      @media (max-width: 600px) {
+        .cards {
+          flex-direction: column;
+        }
+        section {
+          padding: 30px 15px;
+        }
+        h1 {
+          font-size: 24px;
+        }
       }
     </style>
   </head>
@@ -43,8 +76,11 @@
     <section>
       <h1>Создаю сайты, которые будут работать</h1>
       <p>Разработка,дизайн,поддержка</p>
-
       <a href="#" class="btn">Перейти на сайт</a>
+    </section>
+    <section class="about">
+      <h2>Обо мне</h2>
+      <p>Занимаюсь версткой,делаю сайты и хочу развиваться в IT</p>
     </section>
     <section>
       <h2>Мои услуги</h2>
@@ -66,5 +102,6 @@
         </div>
       </div>
     </section>
+    <footer>© 2026 Мой бренд. Все права защищены.</footer>
   </body>
 </html>
